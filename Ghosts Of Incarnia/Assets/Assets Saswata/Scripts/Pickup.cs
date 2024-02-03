@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     private enum PickUpType{
         HealthGlobe,
+        Keys,
     }
     [SerializeField]PickUpType pickUpType;
     [SerializeField] private float pickUpDistance = 5f;
@@ -64,6 +65,13 @@ public class Pickup : MonoBehaviour
             PlayerHealth.Instance.HealPlayer();
             Debug.Log("Health PickUp");
             break;
+            case PickUpType.Keys:
+            UpdateKeyPickupText();
+            Debug.Log("Keys Pickup");
+            break;
         }
+    }
+    void UpdateKeyPickupText(){
+        KeyPickupCounter.Instance.IncrementKeyPickupCount();
     }
 }

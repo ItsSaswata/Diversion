@@ -905,6 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPickup: {fileID: 796133124467641175, guid: 4a325708413b3404ba986b3d0250275f, type: 3}
+  KeyPickup: {fileID: 7088800062599884546, guid: 7cd7dcc4dcf2533418f8eb3cd392aabb, type: 3}
 --- !u!114 &2437861750918590810
 MonoBehaviour:
   m_ObjectHideFlags: 0
