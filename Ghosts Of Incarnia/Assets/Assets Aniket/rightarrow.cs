@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scripts : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class scripts : MonoBehaviour
     public GameObject secondHint;
     public GameObject thirdHint; 
     public GameObject larrow;
+    public GameObject rarrow;
+    public GameObject Begin;
 
     int flag;
     void Start()
@@ -21,7 +25,7 @@ public class scripts : MonoBehaviour
     {
         
     }
-   public void rightArrow()
+   public void RightArrow()
 {
     firstHint.SetActive(false);
     secondHint.SetActive(true);
@@ -33,22 +37,13 @@ public class scripts : MonoBehaviour
         secondHint.SetActive(false);
         thirdHint.SetActive(true);
     }
+    if(thirdHint.activeSelf){
+        rarrow.SetActive(false);
+        Begin.SetActive(true);
+    }
 }
 
-
-
-    public void leftArrow(){
-        if(secondHint.activeSelf){
-            larrow.SetActive(true);
-        }
-        if (secondHint.activeSelf){
-            secondHint.SetActive(false);
-            firstHint.SetActive(true);
-        }
-        else if (thirdHint.activeSelf){
-            thirdHint.SetActive(false);
-            secondHint.SetActive(true);
-        }
+    public void BeginButton(){
+        SceneManager.LoadScene("temp");
     }
-
 }
