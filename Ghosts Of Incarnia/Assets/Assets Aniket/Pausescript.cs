@@ -30,6 +30,8 @@ public class Pausescript : MonoBehaviour
     }
     public void BackToMenuButton(){
         SceneManager.LoadScene("UI");
+        ResumeGame();
+        
     }
     public void PauseGame(){
         PauseMenu.SetActive(true);

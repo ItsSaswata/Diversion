@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
         
     }
     public void StartButton(){
-        SceneManager.LoadScene("PlayerGuide");
+        SceneManager.LoadScene("PlayerHelp");
     }
     public void SettingsButton(){
         MainBox.SetActive(false);
