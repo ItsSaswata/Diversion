@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &251407317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 251407318}
-  m_Layer: 0
-  m_Name: gg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &251407318
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251407317}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1071344592}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525255524
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +338,7 @@ Transform:
   m_LocalPosition: {x: -1.7617204, y: -0.09086634, z: -0.44777593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 251407318}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1071344593
@@ -402,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7881dbe2fa85f4cb8b5d204ac005aa31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WorldPrefab: {fileID: 1902109949054031752, guid: 673a2cd25e3b14486b0d66b63f9b824a, type: 3}
+  WorldPrefab: {fileID: 6920758556918940473, guid: 445277029431b425a98dccba3f70192a, type: 3}
   MainCamera: {fileID: 1015935644}
   CenterPrefab: {fileID: 2965056646338366386, guid: 3d8eec848b26f0e4e9ea07a12061ca37, type: 3}
   PointOfInterestPrefab: {fileID: 7190326179520746719, guid: 08e7d7141e05c134dbc0355e2b423aa5, type: 3}
@@ -410,7 +378,7 @@ MonoBehaviour:
   GuardEnemyPrefab: {fileID: 6350615510715835191, guid: a547c083b28fa1d4aa69d33fee916c2f, type: 3}
   RangedEnemyPrefab: {fileID: 7545247509947615703, guid: cd1d53cb8a5ce90438b138d3fa9adde7, type: 3}
   RoamerEnemyPrefab: {fileID: 7545247509947615703, guid: 93f9223b6181f134e8abb0372efcc82c, type: 3}
-  numberOfPoints: 30
+  numberOfPoints: 35
   spawnRadius: 250
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

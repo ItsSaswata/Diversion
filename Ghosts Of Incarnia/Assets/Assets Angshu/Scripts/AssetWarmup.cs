@@ -42,7 +42,7 @@ public class AssetWarmup : MonoBehaviour
             Vector3 rangedEnemyScale = new Vector3(0.65f, 0.65f, 0.65f);
 
             // Instantiate the CenterPrefab at the center of the instantiated WorldPrefab
-            GameObject centerObject = Instantiate(CenterPrefab, instantiatedWorld.transform.position, Quaternion.identity, instantiatedWorld.transform);
+            GameObject centerObject = Instantiate(CenterPrefab, transform.position, Quaternion.identity, instantiatedWorld.transform);
 
         // Spawn PointOfInterest prefabs around the center
         List<Transform> poiTransforms = SpawnPointsOfInterest(centerObject.transform.position, numberOfPoints, spawnRadius, instantiatedWorld.transform, 20f);
