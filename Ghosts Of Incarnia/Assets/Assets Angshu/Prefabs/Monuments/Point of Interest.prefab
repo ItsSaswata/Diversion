@@ -905,6 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPickup: {fileID: 796133124467641175, guid: 4a325708413b3404ba986b3d0250275f, type: 3}
+  KeyPickup: {fileID: 7088800062599884546, guid: 7cd7dcc4dcf2533418f8eb3cd392aabb, type: 3}
 --- !u!114 &2437861750918590810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,7 +931,7 @@ GameObject:
   - component: {fileID: 3168771548286592996}
   - component: {fileID: 7515584758106510512}
   - component: {fileID: 2782491987280679290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TX Plant_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1108,7 @@ GameObject:
   - component: {fileID: 4660050830425471037}
   - component: {fileID: 1622776773353219416}
   - component: {fileID: 3633262895060400818}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TX Plant_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1522,7 +1523,7 @@ GameObject:
   - component: {fileID: 3611387646711490657}
   - component: {fileID: 1104016200630152088}
   - component: {fileID: 8902169316605357044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TX Plant_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1697,7 @@ GameObject:
   - component: {fileID: 1345669789194727186}
   - component: {fileID: 6837151985064318977}
   - component: {fileID: 4299719539983789565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TX Plant_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

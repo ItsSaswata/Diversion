@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3783349984795922335}
   - component: {fileID: 2086434464156882403}
   - component: {fileID: 490572718434118520}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: WeaponCollid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3503932766294028816}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ActiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 4602259545924555773}
   - component: {fileID: 4756978530336467204}
   - component: {fileID: 5338371592444681745}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Ranged Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824946708532605861}
   - component: {fileID: 534470881452234525}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: TrailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1350121020335126943}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SlashSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,6 +562,10 @@ PrefabInstance:
     - target: {fileID: 328778569177960003, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
       propertyPath: m_Name
       value: AIBow
+      objectReference: {fileID: 0}
+    - target: {fileID: 328778569177960003, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3783359691942446073, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
       propertyPath: m_LocalPosition.x
@@ -603,10 +607,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5840624833033554455, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6703218978347497493, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
       propertyPath: arrowSpawn
       value: 
       objectReference: {fileID: 5650065515182650402}
+    - target: {fileID: 7262316581373268471, guid: 9966ae7ab3605bd4fb3096e3c8497986, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
