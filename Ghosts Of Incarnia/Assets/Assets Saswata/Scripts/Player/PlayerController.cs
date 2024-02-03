@@ -20,8 +20,12 @@ public class PlayerController : MonoBehaviour
     private KnockBack knockBack;
     float startingMoveSpeed;
     bool facingLeft = false;
-    bool isDashing = false;
-    bool dashOnCooldown = false; // New variable to track dash cooldown
+    public bool isDashing = false;
+    bool dashOnCooldown = false;
+    public AudioSource DashAudioController;
+    // New variable to track dash cooldown
+
+
 
     private void Awake()
     {
@@ -53,6 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         FaceDirection();
         Move();
+
     }
 
     public Transform GetWeaponCollider()
@@ -65,6 +70,10 @@ public class PlayerController : MonoBehaviour
         movement = playerControls.Movement.Move.ReadValue<Vector2>();
         anim.SetFloat("moveX", movement.x);
         anim.SetFloat("moveY", movement.y);
+
+
+
+
     }
 
     private void Move()
@@ -72,8 +81,10 @@ public class PlayerController : MonoBehaviour
         if (knockBack.GettingKnockedback)
         {
             return;
+
         }
         rb.MovePosition(rb.position + movement * (MoveSpeed * Time.fixedDeltaTime));
+
     }
 
     public void FaceDirection()
@@ -96,10 +107,15 @@ public class PlayerController : MonoBehaviour
     {
         if (!isDashing && !dashOnCooldown)
         {
+            DashAudioController.Play();
             isDashing = true;
             MoveSpeed *= dashSpeed;
             trailRenderer.emitting = true;
             StartCoroutine(EndDashRoutine());
+        }
+        else
+        {
+            DashAudioController.Stop();
         }
     }
 

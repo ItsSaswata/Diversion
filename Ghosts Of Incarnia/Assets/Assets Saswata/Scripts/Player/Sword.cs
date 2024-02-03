@@ -6,7 +6,12 @@ public class Sword : MonoBehaviour, IWeapon
 {
     [SerializeField] private GameObject slashAnimPrefab;
     [SerializeField] private Transform slashAnimSpawnPoint;
-    
+
+    [SerializeField] private AudioClip slashSound;
+    [SerializeField] private AudioClip hitGhostSound;
+    [SerializeField] private AudioClip hitPlayerSound;
+    private AudioSource audioSource;
+
     //[SerializeField] private float swordAttackCD = .5f;
     [SerializeField]private WeaponInfo weaponInfo;
     private Transform weaponCollider;
@@ -17,6 +22,7 @@ public class Sword : MonoBehaviour, IWeapon
 
     private void Awake() {
         myAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start(){
         weaponCollider = PlayerController.Instance.GetWeaponCollider();
@@ -30,20 +36,46 @@ public class Sword : MonoBehaviour, IWeapon
     }
 
     public void Attack() {
-        // isAttacking = true;
         myAnimator.SetTrigger("Attack");
         weaponCollider.gameObject.SetActive(true);
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);
         slashAnim.transform.parent = this.transform.parent;
-        
+
+        PlaySound(slashSound);
     }
 
-    
+    private void PlaySound(AudioClip sound)
+    {
+        if (audioSource != null && sound != null)
+        {
+            audioSource.clip = sound;
+            audioSource.Play();
+        }
+    }
+
 
     public void DoneAttackingAnimEvent() {
         weaponCollider.gameObject.SetActive(false);
     }
 
+    public void HitEnemy(Collider other)
+    {
+        if (other.CompareTag("GhostTag"))
+        {
+            PlaySound(hitGhostSound);
+        }
+        else if (other.CompareTag("PlayerTag"))
+        {
+            PlaySound(hitPlayerSound);
+        }
+        // You can add additional logic here for handling the hit event
+    }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        HitEnemy(other);
+    }
 
     public void SwingUpFlipAnimEvent() {
         slashAnim.gameObject.transform.rotation = Quaternion.Euler(-180, 0, 0);

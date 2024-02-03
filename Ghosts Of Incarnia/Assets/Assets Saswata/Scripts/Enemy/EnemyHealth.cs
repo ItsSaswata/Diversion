@@ -9,21 +9,37 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]GameObject deathVFXPrefab;
     [SerializeField]float knockBackThurst = 15f;
     KnockBack knockBack;
+    public bool hitCheck;
+
+    public static EnemyHealth Inst;
     
     Flash flash;
     int currentHealth;
     private void Awake(){
         flash = GetComponent<Flash>();
         knockBack = GetComponent<KnockBack>();
+        Inst = this;
     }
     private void Start(){
         currentHealth = StartingHealth;
+        hitCheck = false;
     }
     public void TakeDamage(int damage){
+        //Sword.Instance.HitEnemy();
+        hitCheck = true;
         currentHealth-=damage;
         knockBack.GetKnockedBack(PlayerController.Instance.transform,knockBackThurst);
         StartCoroutine(flash.FlashRoutine());
         StartCoroutine(CheckDetectDeathCoroutine());
+    }
+
+    public IEnumerator HitChecker()
+    {
+        if (hitCheck)
+        {
+            yield return new WaitForSeconds(0.4f);
+            hitCheck = false;
+        }
     }
     private IEnumerator CheckDetectDeathCoroutine(){
         yield return new WaitForSeconds(flash.GetRestoreMatTime());
