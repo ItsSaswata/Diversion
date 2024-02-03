@@ -8,17 +8,17 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Explosion
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - AI
+  - Vegetation
+  - Arrow
+  - PlayerArrow
+  - Player
+  - Floor
+  - Wall
+  - Pickups
   - 
   - 
   - 

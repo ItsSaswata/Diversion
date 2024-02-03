@@ -378,7 +378,7 @@ MonoBehaviour:
   GuardEnemyPrefab: {fileID: 6350615510715835191, guid: a547c083b28fa1d4aa69d33fee916c2f, type: 3}
   RangedEnemyPrefab: {fileID: 7545247509947615703, guid: cd1d53cb8a5ce90438b138d3fa9adde7, type: 3}
   RoamerEnemyPrefab: {fileID: 7545247509947615703, guid: 93f9223b6181f134e8abb0372efcc82c, type: 3}
-  numberOfPoints: 30
+  numberOfPoints: 35
   spawnRadius: 250
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

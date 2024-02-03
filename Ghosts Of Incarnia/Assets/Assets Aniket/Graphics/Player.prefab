@@ -2281,6 +2281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22121842c74a0bf4794887662eb84114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyPickupText: {fileID: 5429483008824783781}
 --- !u!1 &8315103961833224864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,7 +2580,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
