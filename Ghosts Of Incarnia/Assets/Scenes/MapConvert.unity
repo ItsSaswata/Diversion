@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7881dbe2fa85f4cb8b5d204ac005aa31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WorldPrefab: {fileID: 1902109949054031752, guid: 673a2cd25e3b14486b0d66b63f9b824a, type: 3}
+  WorldPrefab: {fileID: 2418672644791016887, guid: ae66dc5efe6eb4cc2aab8133118136e9, type: 3}
   MainCamera: {fileID: 1015935644}
   CenterPrefab: {fileID: 2965056646338366386, guid: 3d8eec848b26f0e4e9ea07a12061ca37, type: 3}
   PointOfInterestPrefab: {fileID: 7190326179520746719, guid: 08e7d7141e05c134dbc0355e2b423aa5, type: 3}
