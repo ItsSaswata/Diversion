@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+
   - GhostTag
+
+  - Spawn
+
   layers:
   - Default
   - TransparentFX
