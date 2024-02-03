@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 4858592666921764608}
   - component: {fileID: 1348877418958897161}
   - component: {fileID: 2437861750918590810}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: TX Props_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

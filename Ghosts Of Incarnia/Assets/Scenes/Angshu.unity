@@ -493,17 +493,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28762c7b3508764bb7cf10be1f79430, type: 3}
---- !u!114 &1095165542 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5429483008824783781, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
-  m_PrefabInstance: {fileID: 1639298716}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1455583820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,10 +670,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4806410386010111576, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
-      propertyPath: keyPickupText
-      value: 
-      objectReference: {fileID: 1095165542}
     - target: {fileID: 6556532109671469036, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -740,10 +725,6 @@ PrefabInstance:
     - target: {fileID: 7563594452847631631, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7947261791513821944, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
