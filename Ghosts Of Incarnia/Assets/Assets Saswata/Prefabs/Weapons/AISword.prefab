@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5521573030550722093}
   - component: {fileID: 9135815122983437780}
   - component: {fileID: 6611594141328718990}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AISword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
