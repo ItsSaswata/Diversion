@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public bool isDashing = false;
     bool dashOnCooldown = false;
     public AudioSource DashAudioController;
+    [SerializeField]
     // New variable to track dash cooldown
 
 
