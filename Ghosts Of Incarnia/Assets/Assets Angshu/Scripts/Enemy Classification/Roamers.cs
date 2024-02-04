@@ -12,6 +12,8 @@ public class Roamer : MonoBehaviour
     //[SerializeField] float dashSpeed = 7f;
     public static Roamer Instance;
     [SerializeField] TrailRenderer trailRenderer;
+    [SerializeField] AudioSource detectAudio;
+    private bool hasDetectedPlayer = false;
     //[SerializeField] private Transform weaponCollider;
 
     private Transform player; // Reference to the player
@@ -177,8 +179,22 @@ public class Roamer : MonoBehaviour
 
     bool PlayerWithinDetectRadius()
     {
-        // Check if the player is within the detect radius
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-        return distanceToPlayer <= detectionRadius;
+        if (!hasDetectedPlayer)
+        {
+            // Check if the player is within the detect radius
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+            if (distanceToPlayer <= detectionRadius)
+            {
+                // Play the detect audio sound
+                detectAudio.Play();
+
+                // Set the flag to true to indicate that the player has been detected
+                hasDetectedPlayer = true;
+            }
+        }
+
+        return hasDetectedPlayer;
     }
+
 }

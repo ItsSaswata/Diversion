@@ -11,8 +11,8 @@ public class AISword : MonoBehaviour, IWeapon
     [SerializeField] private WeaponInfo weaponInfo;
     //private Transform weaponCollider;
     private Animator myAnimator;
-    
 
+    [SerializeField]private AudioSource AISoundFX;
     private GameObject slashAnim;
     //[SerializeField] private GameObject WeaponColliderobj;
     //[SerializeField]private PolygonCollider2D SwordCollider;
@@ -73,8 +73,8 @@ public class AISword : MonoBehaviour, IWeapon
         // Instantiate slashAnim if it's null
         if (slashAnim == null && slashAnimPrefab != null)
         {
-            
-            
+
+            AISoundFX.Play();
             slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);
             slashAnim.transform.parent = transform.parent;
             //StartCoroutine(SwordCollide());
