@@ -8,9 +8,10 @@ public class Sword : MonoBehaviour, IWeapon
     [SerializeField] private Transform slashAnimSpawnPoint;
 
     [SerializeField] private AudioClip slashSound;
-    [SerializeField] private AudioClip hitGhostSound;
-    [SerializeField] private AudioClip hitPlayerSound;
+    
+    
     private AudioSource audioSource;
+    public AudioSource HitSoundFX;
 
     //[SerializeField] private float swordAttackCD = .5f;
     [SerializeField]private WeaponInfo weaponInfo;
@@ -58,24 +59,17 @@ public class Sword : MonoBehaviour, IWeapon
         weaponCollider.gameObject.SetActive(false);
     }
 
-    public void HitEnemy(Collider other)
+    private void OnTriggerEnter2D(Collider other)
     {
         if (other.CompareTag("GhostTag"))
         {
-            PlaySound(hitGhostSound);
+            HitSoundFX.Play();
         }
-        else if (other.CompareTag("PlayerTag"))
-        {
-            PlaySound(hitPlayerSound);
-        }
+        
         // You can add additional logic here for handling the hit event
     }
 
 
-    void OnTriggerEnter(Collider other)
-    {
-        HitEnemy(other);
-    }
 
     public void SwingUpFlipAnimEvent() {
         slashAnim.gameObject.transform.rotation = Quaternion.Euler(-180, 0, 0);

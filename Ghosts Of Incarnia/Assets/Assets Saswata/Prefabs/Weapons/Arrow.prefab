@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 20
   HitVfx: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}
+  SoundFX: {fileID: 0}
 --- !u!114 &7247827719288889592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,4 +318,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddcffd0f07586f4693e4cafd53dddd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destoryVFX: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}
+  destroyVFX: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}

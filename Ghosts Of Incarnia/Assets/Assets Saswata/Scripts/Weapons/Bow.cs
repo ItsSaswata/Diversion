@@ -8,6 +8,7 @@ public class Bow : MonoBehaviour, IWeapon
     [SerializeField]private WeaponInfo weaponInfo;
     [SerializeField]GameObject arrowPrefab;
     [SerializeField]Transform arrowSpawn;
+    [SerializeField]AudioSource BowFire;
     readonly int FIRE_HASH =   Animator.StringToHash("Fire");
     private Animator anim;
     private void Awake(){
@@ -15,8 +16,10 @@ public class Bow : MonoBehaviour, IWeapon
     }
     public void Attack()
     {
-        SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
 
+        BowFire.Play();
+        SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
+        //BowFire.Stop();
         // Spawn arrow slightly to the left
         //Quaternion leftRotation = Quaternion.Euler(0, 0, -15f);
         //SpawnArrow(arrowSpawn.position, arrowSpawn.rotation * leftRotation);
