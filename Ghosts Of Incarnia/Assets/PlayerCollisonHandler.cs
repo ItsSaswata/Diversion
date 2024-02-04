@@ -1,11 +1,23 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerCollisionHandler : MonoBehaviour
 {
     public TextMeshProUGUI collisionText; // Reference to the TextMeshProUGUI for collision display
     private void Start(){
         DisableCollisionText();
+    }
+    private void Update()
+    {
+        // Check for 'E' key press in the Update function
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            // Add any additional conditions if needed before loading the scene
+            if (collisionText.gameObject.activeSelf)
+            {
+                LoadAnotherScene();
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +41,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (collisionText != null)
         {
             collisionText.gameObject.SetActive(true);
+            
         }
     }
     
@@ -39,5 +52,9 @@ public class PlayerCollisionHandler : MonoBehaviour
         {
             collisionText.gameObject.SetActive(false);
         }
+    }
+    void LoadAnotherScene(){
+        Destroy(gameObject);
+        SceneManager.LoadScene("PlayerDied");
     }
 }

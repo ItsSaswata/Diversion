@@ -8,21 +8,14 @@ public class DeathScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject GoBack;
+    public static DeathScript Instance;
+    private void Awake(){
+        Instance = this;
+    }
     public void DeathButton(){
         GoBack.SetActive(true);
     }
     public void GoBackButton(){
         SceneManager.LoadScene("UI");
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
-
