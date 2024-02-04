@@ -44,6 +44,6 @@ public class scripts : MonoBehaviour
 }
 
     public void BeginButton(){
-        SceneManager.LoadScene("temp");
+        SceneManager.LoadScene("MapConvert");
     }
 }

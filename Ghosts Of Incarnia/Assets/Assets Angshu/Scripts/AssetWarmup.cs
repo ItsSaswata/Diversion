@@ -7,7 +7,7 @@ public class AssetWarmup : MonoBehaviour
 {
 
     public static AssetWarmup Instance;
-    public GameObject WorldPrefab;
+    public GameObject[] WorldPrefab;
     public GameObject MainCamera;
     public GameObject CenterPrefab;
      public GameObject centerObject { get; private set; } // Prefab to spawn at the center
@@ -35,9 +35,9 @@ public class AssetWarmup : MonoBehaviour
     if (WorldPrefab != null && CenterPrefab != null && PointOfInterestPrefab != null && PlayerPrefab != null && GuardEnemyPrefab != null && RangedEnemyPrefab != null && RoamerEnemyPrefab != null)
     {
         StartCoroutine(CameraStop());
-
+            int random = Random.Range(0, WorldPrefab.Length);
         // Instantiate the WorldPrefab
-        GameObject instantiatedWorld = Instantiate(WorldPrefab);
+        GameObject instantiatedWorld = Instantiate(WorldPrefab[random]);
 
             Vector3 guardEnemyScale = new Vector3(0.65f, 0.65f, 0.65f);
             Vector3 rangedEnemyScale = new Vector3(0.65f, 0.65f, 0.65f);

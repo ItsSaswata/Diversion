@@ -264,13 +264,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 0}
-  orbitSpeed: 4
+  orbitSpeed: 6
   detectionRadius: 9
-  moveSpeed: 3
+  moveSpeed: 6
   obstacleTag: Tree
   trailRenderer: {fileID: 0}
   detectAudio: {fileID: 4773310523049127012}
-  fallbackSpeed: 4
+  fallbackSpeed: 6
   attackCooldown: 0.6
 --- !u!82 &4773310523049127012
 AudioSource:
