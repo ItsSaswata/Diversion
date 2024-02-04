@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 4928741191931802763}
   m_Layer: 6
   m_Name: Roamer Enemy
-  m_TagString: Untagged
+  m_TagString: GhostTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
   StartingHealth: 10
   deathVFXPrefab: {fileID: 4879276280609179465, guid: 445e377134a265941a6349fc20541783, type: 3}
   knockBackThurst: 3
+  hitCheck: 0
 --- !u!114 &8272203198390463557
 MonoBehaviour:
   m_ObjectHideFlags: 0

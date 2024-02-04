@@ -4,6 +4,11 @@ public class WaypointIndicator : MonoBehaviour
 {
     public Transform player;
     public Transform spawnPoint;
+    void Start(){
+        if(AssetWarmup.Instance!=null &&AssetWarmup.Instance.centerObject!=null){
+            spawnPoint = AssetWarmup.Instance.centerObject.transform;
+        }
+    }
 
     void Update()
     {
@@ -21,7 +26,7 @@ public class WaypointIndicator : MonoBehaviour
             // Flip the image horizontally
             if (directionToSpawn.x < 0)
             {
-                transform.localScale = new Vector3(-1, 1, 1); // Flip along the y-axis
+                transform.localScale = new Vector3(1, -1, 1); // Flip along the y-axis
             }
             else
             {
