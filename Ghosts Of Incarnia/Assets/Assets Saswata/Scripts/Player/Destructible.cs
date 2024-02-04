@@ -7,14 +7,23 @@ public class Destructible : MonoBehaviour
     [SerializeField] GameObject destroyVFX;
     [SerializeField] float damageRadius = 5f;
     [SerializeField] int damageAmount = 10;
+    [SerializeField] AudioClip destroySound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.GetComponent<DamegeSource>() || other.gameObject.GetComponent<Projectile>())
         {
+            PlayDestroySound();
             Instantiate(destroyVFX, transform.position, Quaternion.identity);
             DamageNearbyEntities();
             Destroy(gameObject);
+        }
+    }
+    private void PlayDestroySound()
+    {
+        if (destroySound != null)
+        {
+            AudioSource.PlayClipAtPoint(destroySound, transform.position);
         }
     }
 
