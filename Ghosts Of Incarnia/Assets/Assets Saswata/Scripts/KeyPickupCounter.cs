@@ -7,7 +7,7 @@ public class KeyPickupCounter : MonoBehaviour
     public static KeyPickupCounter Instance;
     public TextMeshProUGUI keyPickupText;
     public TextMeshProUGUI additionalText;
-    public GameObject keyPrefab; // Reference to the prefab with CapsuleCollider2D
+    public GameObject SpawnPoint; // Reference to the prefab with CapsuleCollider2D
     public int keyPickupCount = 0;
 
     private void Awake()
@@ -17,6 +17,7 @@ public class KeyPickupCounter : MonoBehaviour
 
     private void Start()
     {
+        SpawnPoint = AssetWarmup.Instance.centerObject;
         UpdateKeyPickupText();
         DisableCollider(); // Disable the collider at the start
     }
@@ -64,9 +65,9 @@ public class KeyPickupCounter : MonoBehaviour
 
     private void EnableCollider()
     {
-        if (keyPrefab != null)
+        if (SpawnPoint != null)
         {
-            CapsuleCollider2D collider = keyPrefab.GetComponent<CapsuleCollider2D>();
+            CapsuleCollider2D collider = SpawnPoint.GetComponent<CapsuleCollider2D>();
             if (collider != null)
             {
                 collider.enabled = true;
@@ -76,9 +77,9 @@ public class KeyPickupCounter : MonoBehaviour
 
     private void DisableCollider()
     {
-        if (keyPrefab != null)
+        if (SpawnPoint != null)
         {
-            CapsuleCollider2D collider = keyPrefab.GetComponent<CapsuleCollider2D>();
+            CapsuleCollider2D collider = SpawnPoint.GetComponent<CapsuleCollider2D>();
             if (collider != null)
             {
                 collider.enabled = false;
