@@ -1493,6 +1493,7 @@ MonoBehaviour:
   MainBox: {fileID: 1449954936}
   QuitBox: {fileID: 400061438}
   Image: {fileID: 1266772978}
+  GameTitle: {fileID: 104211273}
 --- !u!4 &525973610
 Transform:
   m_ObjectHideFlags: 0

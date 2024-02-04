@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject MainBox;
     public GameObject QuitBox;
     public GameObject Image;
+    public GameObject GameTitle;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +24,12 @@ public class MainMenu : MonoBehaviour
     public void SettingsButton(){
         MainBox.SetActive(false);
         SettingsBox.SetActive(true);
+        GameTitle.SetActive(false);
     }
     public void BackButton(){
         MainBox.SetActive(true);
         SettingsBox.SetActive(false);
+        GameTitle.SetActive(true);
     }
     public void QuitButton(){
         QuitBox.SetActive(true);
