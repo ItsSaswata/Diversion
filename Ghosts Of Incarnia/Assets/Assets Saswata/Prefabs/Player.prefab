@@ -5634,6 +5634,7 @@ GameObject:
   - component: {fileID: 9014168697210864698}
   - component: {fileID: 7207670932034682705}
   - component: {fileID: 5839509561840118981}
+  - component: {fileID: 7747469909202480744}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -5661,6 +5662,7 @@ Transform:
   - {fileID: 3590739488272968394}
   - {fileID: 5866526086263182344}
   - {fileID: 5565581333281522652}
+  - {fileID: 6742140892119254739}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &712830897437840606
@@ -5971,6 +5973,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7747469909202480744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987667327328683283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af59c3c8d9e6ba4583f661ac3df8f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionText: {fileID: 190136466076439889}
 --- !u!1 &4076617586391313515
 GameObject:
   m_ObjectHideFlags: 0
@@ -7338,7 +7353,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-
 --- !u!1 &7850127716603943969
 GameObject:
   m_ObjectHideFlags: 0
@@ -7467,8 +7481,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-
-
 --- !u!1 &7897627788221350991
 GameObject:
   m_ObjectHideFlags: 0
@@ -7618,6 +7630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyPickupText: {fileID: 5429483008824783781}
   additionalText: {fileID: 2122938636724294858}
+  keyPrefab: {fileID: 0}
   keyPickupCount: 0
 --- !u!1 &7963592187772131865
 GameObject:

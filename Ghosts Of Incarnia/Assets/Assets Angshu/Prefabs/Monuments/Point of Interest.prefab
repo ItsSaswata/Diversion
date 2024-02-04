@@ -133,7 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddcffd0f07586f4693e4cafd53dddd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destoryVFX: {fileID: 4879276280609179465, guid: f88b9e4746fc0c344a8011b4be26c7bd, type: 3}
+  destroyVFX: {fileID: 4879276280609179465, guid: 048406232b17c7349a02f9b67ff1e7d4, type: 3}
+  damageRadius: 5
+  damageAmount: 10
 --- !u!1 &725481708615547911
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +735,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddcffd0f07586f4693e4cafd53dddd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destoryVFX: {fileID: 4879276280609179465, guid: f88b9e4746fc0c344a8011b4be26c7bd, type: 3}
+  destroyVFX: {fileID: 4879276280609179465, guid: 048406232b17c7349a02f9b67ff1e7d4, type: 3}
+  damageRadius: 5
+  damageAmount: 10
 --- !u!1 &3197749013009349691
 GameObject:
   m_ObjectHideFlags: 0

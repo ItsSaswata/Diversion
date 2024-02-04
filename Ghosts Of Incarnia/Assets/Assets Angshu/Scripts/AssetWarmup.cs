@@ -9,7 +9,8 @@ public class AssetWarmup : MonoBehaviour
     public static AssetWarmup Instance;
     public GameObject WorldPrefab;
     public GameObject MainCamera;
-    public GameObject CenterPrefab; // Prefab to spawn at the center
+    public GameObject CenterPrefab;
+     public GameObject centerObject { get; private set; } // Prefab to spawn at the center
     public GameObject PointOfInterestPrefab;
     public GameObject PlayerPrefab;
     public GameObject GuardEnemyPrefab;
@@ -42,7 +43,7 @@ public class AssetWarmup : MonoBehaviour
             Vector3 rangedEnemyScale = new Vector3(0.65f, 0.65f, 0.65f);
 
             // Instantiate the CenterPrefab at the center of the instantiated WorldPrefab
-            GameObject centerObject = Instantiate(CenterPrefab, transform.position, Quaternion.identity, instantiatedWorld.transform);
+            centerObject = Instantiate(CenterPrefab, transform.position, Quaternion.identity, instantiatedWorld.transform);
 
         // Spawn PointOfInterest prefabs around the center
         List<Transform> poiTransforms = SpawnPointsOfInterest(centerObject.transform.position, numberOfPoints, spawnRadius, instantiatedWorld.transform, 20f);
