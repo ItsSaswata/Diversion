@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 8338045853864064804}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -673,8 +673,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5504766, y: 0.88977545}
-  m_Size: {x: 5.6740847, y: 4.5383453}
+  m_Offset: {x: -0.7991564, y: 0.3734641}
+  m_Size: {x: 2.998889, y: 2.116486}
   m_Direction: 1
 --- !u!1 &3026387886066786515
 GameObject:
