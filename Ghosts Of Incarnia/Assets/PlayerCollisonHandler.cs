@@ -55,6 +55,6 @@ public class PlayerCollisionHandler : MonoBehaviour
     }
     void LoadAnotherScene(){
         Destroy(gameObject);
-        SceneManager.LoadScene("PlayerDied");
+        SceneManager.LoadScene("EndScene");
     }
 }
