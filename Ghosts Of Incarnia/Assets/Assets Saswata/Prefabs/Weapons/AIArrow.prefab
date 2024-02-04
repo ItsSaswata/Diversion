@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2840451734065141033}
   - component: {fileID: 5999093666997698195}
   - component: {fileID: 7247827719288889592}
-  - component: {fileID: 2001717859353522182}
+  - component: {fileID: -3583479354866934287}
   m_Layer: 8
   m_Name: AIArrow
   m_TagString: Untagged
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
---- !u!114 &2001717859353522182
+--- !u!114 &-3583479354866934287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2954756706956113725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ddcffd0f07586f4693e4cafd53dddd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4449dd68e6b729245afcbd4f009f1a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destoryVFX: {fileID: 4879276280609179465, guid: 4129c41c92a20504aa8dbeae45c1d880, type: 3}

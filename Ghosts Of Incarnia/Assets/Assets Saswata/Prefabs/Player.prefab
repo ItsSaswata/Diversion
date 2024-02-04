@@ -50,13 +50,13 @@ GameObject:
   - component: {fileID: 6998638080378526156}
   - component: {fileID: 8476662978812642681}
   - component: {fileID: 312792966337421172}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5866526086263182344
 Transform:
   m_ObjectHideFlags: 0
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 7197274724308048141}
   - component: {fileID: 3853936220208492505}
   - component: {fileID: 3268704005612928878}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4965,7 +4965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6798247280041388702}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,7 +5003,7 @@ GameObject:
   - component: {fileID: 2720860193468259409}
   - component: {fileID: 5287158436019552760}
   - component: {fileID: 8371201379085594125}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5077,7 +5077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5565581333281522652}
   - component: {fileID: 6452069402891170257}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: PlayerFollowCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5148,7 +5148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7691418096036768580}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: HeartContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,7 +5187,7 @@ GameObject:
   - component: {fileID: 6845758294617538695}
   - component: {fileID: 6809668138858099906}
   - component: {fileID: 117019705862622337}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Active Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5264,7 +5264,7 @@ GameObject:
   - component: {fileID: 1989486926279683371}
   - component: {fileID: 4444657668184593521}
   - component: {fileID: 5742108627189885113}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5353,7 +5353,7 @@ GameObject:
   - component: {fileID: 5129386921220374251}
   - component: {fileID: 2609766624508039386}
   - component: {fileID: 5051067365406898575}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: HeartImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5429,7 +5429,7 @@ GameObject:
   - component: {fileID: 2927006103970135430}
   - component: {fileID: 4448877843408848788}
   - component: {fileID: 1132954066165720516}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: UI Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5536,7 +5536,7 @@ GameObject:
   - component: {fileID: 3755810594743812008}
   - component: {fileID: 7329379413374908258}
   - component: {fileID: 2889845987362817545}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5634,12 +5634,8 @@ GameObject:
   - component: {fileID: 9014168697210864698}
   - component: {fileID: 7207670932034682705}
   - component: {fileID: 5839509561840118981}
-
-  - component: {fileID: 8085952606146839591}
-
   - component: {fileID: 7747469909202480744}
-
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5977,11 +5973,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-
---- !u!114 &8085952606146839591
-
 --- !u!114 &7747469909202480744
-
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6005,7 +5997,7 @@ GameObject:
   - component: {fileID: 3338827746508613115}
   - component: {fileID: 7214204435896806890}
   - component: {fileID: 4884311390826235947}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: ActiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6063,7 +6055,7 @@ GameObject:
   - component: {fileID: 1454829449200403083}
   - component: {fileID: 1023354642731134320}
   - component: {fileID: 3972486880708730352}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: WeaponCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6159,7 +6151,7 @@ GameObject:
   - component: {fileID: 8875437612145825180}
   - component: {fileID: 9191727660797875496}
   - component: {fileID: 3020032813809194051}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6233,7 +6225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4577232785884739178}
   - component: {fileID: 4862481321805799701}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: TrailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6388,7 +6380,7 @@ GameObject:
   - component: {fileID: 6556532109671469036}
   - component: {fileID: 8298952763566391600}
   - component: {fileID: 2957446344034195813}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6463,7 +6455,7 @@ GameObject:
   - component: {fileID: 4464152317631652806}
   - component: {fileID: 8975056912407187612}
   - component: {fileID: 2122938636724294858}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Return text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6733,7 +6725,7 @@ GameObject:
   - component: {fileID: 1288768016574790338}
   - component: {fileID: 5778045313824063123}
   - component: {fileID: 4811824745130832624}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6840,7 +6832,7 @@ GameObject:
   - component: {fileID: 3017184750200801572}
   - component: {fileID: 7181023374146287277}
   - component: {fileID: 2001574297400301442}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6915,7 +6907,7 @@ GameObject:
   - component: {fileID: 1598859382650448800}
   - component: {fileID: 4827546400175046969}
   - component: {fileID: 852132147316504669}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6991,7 +6983,7 @@ GameObject:
   - component: {fileID: 7311660851640472450}
   - component: {fileID: 3301387868399033219}
   - component: {fileID: 9011564554034232087}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Inventory (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7082,7 +7074,7 @@ GameObject:
   - component: {fileID: 4909845233099637717}
   - component: {fileID: 2465912601728664222}
   - component: {fileID: 2305515419816295438}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Inventory (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7172,7 +7164,7 @@ GameObject:
   - component: {fileID: 7118429369661837597}
   - component: {fileID: 7168552003537707679}
   - component: {fileID: 2544359144893620836}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7245,7 +7237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1472248360245510196}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: LeaveGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7282,7 +7274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7429788035391291621}
   - component: {fileID: 8248638298000468277}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: HealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7371,7 +7363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6742140892119254739}
   - component: {fileID: 5688623338366151281}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: DashController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7638,7 +7630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyPickupText: {fileID: 5429483008824783781}
   additionalText: {fileID: 2122938636724294858}
-  keyPrefab: {fileID: 0}
+  SpawnPoint: {fileID: 0}
   keyPickupCount: 0
 --- !u!1 &7963592187772131865
 GameObject:
@@ -7651,13 +7643,13 @@ GameObject:
   - component: {fileID: 8816663015681353272}
   - component: {fileID: 2210691213361154348}
   - component: {fileID: 190136466076439889}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8816663015681353272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7860,7 +7852,7 @@ GameObject:
   - component: {fileID: 7613742304241351336}
   - component: {fileID: 1473400288831560707}
   - component: {fileID: 4132701405090680241}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7933,7 +7925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6216121345994921309}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: slashSpawnPointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7969,7 +7961,7 @@ GameObject:
   - component: {fileID: 7947261791513821944}
   - component: {fileID: 3913960313366432411}
   - component: {fileID: 5610048007285769139}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Singleton<PlayerHealth>
 {
+    
     public int maxHealth;
     private Slider healthSlider;
     public float knockBackThurst = 10f;
@@ -28,18 +30,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         UpdateHealthSlider();
 
     }
-    //private void OnCollisionStay2D(Collision2D other){
-    //    EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
-        //Roamer enemy1 = other.gameObject.GetComponent<Roamer>();
-        //ColliderDamage Sword = other.gameObject.GetComponent<ColliderDamage>();
-    //    AISword aisword = other.gameObject.GetComponent<AISword>();
-    //    Projectile Arrow = other.gameObject.GetComponent<Projectile>();
-    //    if((enemy || aisword||Arrow) && canTakeDamage){
-    //        TakeDamage(1);
-    //        knockBack.GetKnockedBack(other.gameObject.transform,knockBackThurst);
-    //        StartCoroutine(flash.FlashRoutine());
-    //    }
-    //}
+    
     public void HealPlayer(){
         if(currentHealth<maxHealth){
             currentHealth+=10;
@@ -55,7 +46,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         canTakeDamage = false;
         currentHealth-=damageAmt;
         StartCoroutine(flash.FlashRoutine());
-        //knockBack.GetKnockedBack(enemyHealth.transform,knockBackThurst);
+       
         StartCoroutine(DamageRecoveryRoutine());
         UpdateHealthSlider();
         DetectDeath();
@@ -64,11 +55,18 @@ public class PlayerHealth : Singleton<PlayerHealth>
         yield return new WaitForSeconds(damageRecoveryTime);
         canTakeDamage = true;
     }
-    private void DetectDeath(){
-        if(currentHealth<=0){
+    private void DetectDeath()
+    {
+        if (currentHealth <= 0)
+        {
             currentHealth = 0;
-            //Destroy(gameObject);
             Debug.Log("Player Died");
+
+            // Destroy the player game object
+            
+
+            
+            StartCoroutine(SceneTransitionRoutine());
         }
     }
     void UpdateHealthSlider(){
@@ -77,6 +75,24 @@ public class PlayerHealth : Singleton<PlayerHealth>
         }
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+    }
+    private IEnumerator SceneTransitionRoutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        // Load the "PlayerDied" scene
+        SceneManager.LoadScene("PlayerDied");
+        Destroy(gameObject);
+        // Call DeathButton from DeathScript after a delay (if needed)
+        StartCoroutine(SimulateButtonClick());
+    }
+    private IEnumerator SimulateButtonClick()
+    {
+        // Wait for a short delay before simulating the button click
+        yield return new WaitForSeconds(0.5f);
+
+        // Find the DeathScript instance and call DeathButton
+        DeathScript.Instance.DeathButton();
     }
 
 }

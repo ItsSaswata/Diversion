@@ -8,6 +8,7 @@ public class AIBow : MonoBehaviour, IWeapon
     [SerializeField] GameObject arrowPrefab;
     [SerializeField] Transform arrowSpawn;
     readonly int FIRE_HASH = Animator.StringToHash("Fire");
+    [SerializeField] private AudioSource AISoundFX;
     private Animator anim;
     private void Awake()
     {
@@ -15,6 +16,7 @@ public class AIBow : MonoBehaviour, IWeapon
     }
     public void Attack()
     {
+        AISoundFX.Play();
         SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
 
         // Spawn arrow slightly to the left

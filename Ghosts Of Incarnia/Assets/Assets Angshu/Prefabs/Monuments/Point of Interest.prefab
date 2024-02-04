@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1501860964502253865}
   - component: {fileID: 2389007847150180468}
   - component: {fileID: 6510753924812162776}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: TX Props_25 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 3686420295012425139}
   - component: {fileID: 4114396316297922621}
   - component: {fileID: 3483763293034963570}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: TX Props_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}

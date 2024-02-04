@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3503932766294028816}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ActiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,8 +49,8 @@ GameObject:
   - component: {fileID: 4602259545924555773}
   - component: {fileID: 4756978530336467204}
   - component: {fileID: 7292264115262534607}
-  - component: {fileID: 4928741191931802763}
-  m_Layer: 6
+  - component: {fileID: 4773310523049127012}
+  m_Layer: 7
   m_Name: Roamer Enemy
   m_TagString: GhostTag
   m_Icon: {fileID: 0}
@@ -269,28 +269,105 @@ MonoBehaviour:
   moveSpeed: 3
   obstacleTag: Tree
   trailRenderer: {fileID: 0}
+  detectAudio: {fileID: 4773310523049127012}
   fallbackSpeed: 4
   attackCooldown: 0.6
---- !u!114 &4928741191931802763
-MonoBehaviour:
+--- !u!82 &4773310523049127012
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7545247509947615703}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bc421106717ef429038fa1cfb1d685, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerPoint: {fileID: 0}
-  orbitSpeed: 2.6
-  detectionRadius: 10
-  moveSpeed: 4
-  obstacleTag: Tree
-  trailRenderer: {fileID: 534470881452234525}
-  fallbackSpeed: 8
-  attackCooldown: 2
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 24e62f640f2cf4419b6073c125f370ce, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.075
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8216737317680267168
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824946708532605861}
   - component: {fileID: 534470881452234525}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: TrailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1350121020335126943}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: SlashSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5718960424893688604, guid: dc63207d8466e9246bad21a325fcdcd7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7848338213660649176, guid: dc63207d8466e9246bad21a325fcdcd7, type: 3}
       propertyPath: slashAnimSpawnPoint

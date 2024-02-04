@@ -252,8 +252,7 @@ MonoBehaviour:
   slashAnimPrefab: {fileID: 8991297157778487528, guid: f78afb5fec8914b4988759fc0ab2547c, type: 3}
   slashAnimSpawnPoint: {fileID: 0}
   slashSound: {fileID: 8300000, guid: 1249d72cea667477ba46b7287cc9d166, type: 3}
-  hitGhostSound: {fileID: 8300000, guid: 7a8ac5e9a359442678edfed9ece5dc56, type: 3}
-  hitPlayerSound: {fileID: 8300000, guid: 7a8ac5e9a359442678edfed9ece5dc56, type: 3}
+  HitSoundFX: {fileID: 0}
   weaponInfo: {fileID: 11400000, guid: fdcc3710cecdcc7479c41a3e08d3427e, type: 2}
 --- !u!82 &7562637216313136263
 AudioSource:
@@ -267,7 +266,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.808
   m_Pitch: 1
   Loop: 0
   Mute: 0

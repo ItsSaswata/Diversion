@@ -4,26 +4,23 @@
 TagManager:
   serializedVersion: 2
   tags:
-
   - GhostTag
-
   - Spawn
-
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Explosion
+  - 
   - Water
   - UI
+  - Player
   - AI
-  - Vegetation
   - Arrow
   - PlayerArrow
-  - Player
-  - Floor
+  - Vegetation
   - Wall
-  - Pickups
+  - Floor
+  - Barrel
   - 
   - 
   - 
