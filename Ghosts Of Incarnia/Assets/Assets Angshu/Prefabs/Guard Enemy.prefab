@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4233004187560832836}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: SlashSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3482779323738571733}
   - component: {fileID: 8111808755590490828}
   - component: {fileID: 4764953373994903035}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Guard Enemy
   m_TagString: GhostTag
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 231382059074067425}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ActiveWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4709891831316488707}
   - component: {fileID: 2179275705974168760}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: TrailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5718960424893688604, guid: dc63207d8466e9246bad21a325fcdcd7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7848338213660649176, guid: dc63207d8466e9246bad21a325fcdcd7, type: 3}
       propertyPath: slashAnimSpawnPoint

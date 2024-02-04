@@ -17,12 +17,16 @@ public class Sword : MonoBehaviour, IWeapon
     [SerializeField]private WeaponInfo weaponInfo;
     private Transform weaponCollider;
     private Animator myAnimator;
+
+
+    public static Sword Instance;
     
 
     private GameObject slashAnim;
 
     private void Awake() {
         myAnimator = GetComponent<Animator>();
+        Instance = this;
         audioSource = GetComponent<AudioSource>();
     }
     private void Start(){
@@ -59,15 +63,7 @@ public class Sword : MonoBehaviour, IWeapon
         weaponCollider.gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter2D(Collider other)
-    {
-        if (other.CompareTag("GhostTag"))
-        {
-            HitSoundFX.Play();
-        }
-        
-        // You can add additional logic here for handling the hit event
-    }
+    
 
 
 

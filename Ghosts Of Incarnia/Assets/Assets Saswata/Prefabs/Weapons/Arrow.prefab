@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2840451734065141033}
   - component: {fileID: 5999093666997698195}
   - component: {fileID: 7247827719288889592}
-  - component: {fileID: -6709762372468861590}
+  - component: {fileID: -6027069569197400272}
   m_Layer: 9
   m_Name: Arrow
   m_TagString: Untagged
@@ -292,7 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 20
   HitVfx: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}
-  SoundFX: {fileID: 0}
 --- !u!114 &7247827719288889592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
---- !u!114 &-6709762372468861590
+--- !u!114 &-6027069569197400272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,7 +314,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2954756706956113725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ddcffd0f07586f4693e4cafd53dddd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4449dd68e6b729245afcbd4f009f1a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyVFX: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}
+  destoryVFX: {fileID: 4879276280609179465, guid: aef7fc874400b7c4dbbe394d5f79af61, type: 3}
