@@ -31,15 +31,16 @@ public class MainMenu : MonoBehaviour
         SettingsBox.SetActive(false);
         GameTitle.SetActive(true);
     }
-    public void QuitButton(){
-        QuitBox.SetActive(true);
-        Image.SetActive(false);
-        MainBox.SetActive(false);
-    }
+    
     public void CancelQuit(){
         QuitBox.SetActive(false);
         Image.SetActive(true);
         MainBox.SetActive(true);
+    }
+    public void QuitButton(){
+        QuitBox.SetActive(true);
+        Image.SetActive(false);
+        MainBox.SetActive(false);
     }
     public void YesQuit(){
         Application.Quit();

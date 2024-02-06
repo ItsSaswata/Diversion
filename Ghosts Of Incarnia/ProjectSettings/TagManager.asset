@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GhostTag
   - Spawn
+  - Pause
   layers:
   - Default
   - TransparentFX
