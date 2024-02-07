@@ -5758,13 +5758,14 @@ GameObject:
   - component: {fileID: 5754013350711961451}
   - component: {fileID: 1191714678555499152}
   - component: {fileID: 3839719151159976964}
+  - component: {fileID: 6549676818881699929}
   m_Layer: 6
   m_Name: PausePanel
   m_TagString: Pause
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5754013350711961451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5823,6 +5824,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6549676818881699929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3456140977438040318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400c449b4e0fa44a9b6443ee54ba4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 4982463171613850072}
 --- !u!1 &3713139625621484927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6433,7 @@ MonoBehaviour:
   dashCooldown: 0.8
   isDashing: 0
   DashAudioController: {fileID: 5688623338366151281}
+  isGamePaused: 0
 --- !u!95 &7402551046524351648
 Animator:
   serializedVersion: 5
