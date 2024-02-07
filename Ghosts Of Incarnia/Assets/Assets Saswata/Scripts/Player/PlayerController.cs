@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     // New variable to track dash cooldown
 
-
+    private bool isGamePaused;
 
     private void Awake()
     {
@@ -51,7 +51,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        PlayerInput();
+        if(!isGamePaused){
+            PlayerInput();
+        }
+        
     }
 
     private void FixedUpdate()
@@ -134,5 +137,9 @@ public class PlayerController : MonoBehaviour
 
         isDashing = false;
         dashOnCooldown = false;
+    }
+    public void SetGamePaused(bool paused)
+    {
+        isGamePaused = paused;
     }
 }
