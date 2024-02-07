@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 10
-  deathVFXPrefab: {fileID: 4879276280609179465, guid: 445e377134a265941a6349fc20541783, type: 3}
+  deathVFXPrefab: {fileID: 4879276280609179465, guid: 886d833b175294f00b7522514006ea5f, type: 3}
   knockBackThurst: 3
   hitCheck: 0
 --- !u!114 &8272203198390463557
@@ -268,9 +268,11 @@ MonoBehaviour:
   detectionRadius: 9
   moveSpeed: 6
   obstacleTag: Tree
-  trailRenderer: {fileID: 0}
+  dashSpeed: 20
+  trailRenderer: {fileID: 534470881452234525}
   detectAudio: {fileID: 4773310523049127012}
-  fallbackSpeed: 6
+  fallbackSpeed: 12
+  isDashing: 0
   attackCooldown: 0.6
 --- !u!82 &4773310523049127012
 AudioSource:

@@ -262,12 +262,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRadius: 10
-  moveSpeed: 4
+  moveSpeed: 6
   obstacleTag: Tree
   dashSpeed: 7
-  trailRenderer: {fileID: 0}
+  trailRenderer: {fileID: 2179275705974168760}
   detectAudio: {fileID: 2082141608004470387}
-  fallbackSpeed: 5
+  fallbackSpeed: 14
   attackCooldown: 0.6
 --- !u!82 &2082141608004470387
 AudioSource:

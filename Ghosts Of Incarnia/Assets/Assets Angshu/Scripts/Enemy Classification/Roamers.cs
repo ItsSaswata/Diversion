@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Roamer : MonoBehaviour
 {
+    
     public Transform centerPoint; // Center point around which the enemy moves
     public float orbitSpeed = 1f; // Speed at which the enemy orbits the center point
     public float detectionRadius = 3f; // Radius for detecting the player
     public float moveSpeed = 2f; // Speed at which the enemy moves towards the player
     public string obstacleTag = "Tree"; // Tag for obstacle GameObjects
-    //[SerializeField] float dashSpeed = 7f;
+    [SerializeField] float dashSpeed = 7f;
     public static Roamer Instance;
     [SerializeField] TrailRenderer trailRenderer;
     [SerializeField] AudioSource detectAudio;
@@ -26,20 +27,23 @@ public class Roamer : MonoBehaviour
     
     public float fallbackSpeed = 3f;
 
-
+    public bool isDashing;
+    bool dashOnCooldown;
     public float attackCooldown = 0.6f; // Cooldown duration between attacks
     private float currentCooldown = 0f; // Current cooldown timer
 
 
     private void Awake()
     {
+        Instance = this;
         //anim = GetComponent<Animator>();
         //centerPoint.position = AssetWarmup.Instance.CenterPrefab.transform.position; 
     }
 
     void Start()
     {
-
+        isDashing = false;
+        dashOnCooldown = false;
         // Assuming your player object has the "Player" tag
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -167,6 +171,39 @@ public class Roamer : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0f);
         //anim.SetFloat("moveX", transform.eulerAngles.x);
         //anim.SetFloat("moveY", transform.eulerAngles.y);
+    }
+    public void Dash()
+    {
+        if (!isDashing)
+        {
+            Debug.Log("RoamerDashed");
+            //DashAudioController.Play();
+            isDashing = true;
+            Vector3 directionToPlayer = (transform.position - player.position*50f).normalized;
+            moveSpeed *= dashSpeed;
+            //trailRenderer.emitting = true;
+            StartCoroutine(EndDashRoutine());
+        }
+        else
+        {
+           // DashAudioController.Stop();
+        }
+    }
+
+    private IEnumerator EndDashRoutine()
+    {
+        float dashTime = 0.2f;
+        float dashCD = 6f;
+
+        yield return new WaitForSeconds(dashTime);
+
+        moveSpeed = 6f;
+        
+
+        yield return new WaitForSeconds(dashCD);
+
+        isDashing = false;
+        
     }
 
     void ApproachPlayer()

@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 8
-  deathVFXPrefab: {fileID: 4879276280609179465, guid: 445e377134a265941a6349fc20541783, type: 3}
+  deathVFXPrefab: {fileID: 4879276280609179465, guid: fcf759215119e40d29c158f0cf8acc89, type: 3}
   knockBackThurst: 5
   hitCheck: 0
 --- !u!114 &8272203198390463557
