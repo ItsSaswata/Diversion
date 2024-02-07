@@ -40,5 +40,6 @@ public class PauseManager : MonoBehaviour
         pauseMenu.SetActive(false);
        // playerCamera.enabled = true;
         mainCamera.enabled = false;
+        
     }
 }
