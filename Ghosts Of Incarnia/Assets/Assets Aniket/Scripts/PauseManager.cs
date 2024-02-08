@@ -66,4 +66,5 @@ public class PauseManager : MonoBehaviour
     public void QuitButton(){
         Application.Quit();
     }
+    //gg
 }
