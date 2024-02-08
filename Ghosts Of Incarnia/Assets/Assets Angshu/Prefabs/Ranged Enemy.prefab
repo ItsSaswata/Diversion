@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 4602259545924555773}
   - component: {fileID: 4756978530336467204}
   - component: {fileID: 5338371592444681745}
+  - component: {fileID: -3089962932566058729}
   m_Layer: 7
   m_Name: Ranged Enemy
   m_TagString: GhostTag
@@ -266,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 8
-  deathVFXPrefab: {fileID: 4879276280609179465, guid: 445e377134a265941a6349fc20541783, type: 3}
+  deathVFXPrefab: {fileID: 4879276280609179465, guid: fcf759215119e40d29c158f0cf8acc89, type: 3}
   knockBackThurst: 5
   hitCheck: 0
 --- !u!114 &8272203198390463557
@@ -367,6 +368,19 @@ MonoBehaviour:
   followDistance: 7
   moveSpeed: 4
   attackCooldown: 0.8
+--- !u!114 &-3089962932566058729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545247509947615703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85a7e9003b88b043b3076469f38a753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPickup: {fileID: 796133124467641175, guid: 4a325708413b3404ba986b3d0250275f, type: 3}
 --- !u!1 &8216737317680267168
 GameObject:
   m_ObjectHideFlags: 0

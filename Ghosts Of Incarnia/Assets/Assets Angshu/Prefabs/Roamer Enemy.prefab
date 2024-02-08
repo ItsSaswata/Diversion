@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 4756978530336467204}
   - component: {fileID: 7292264115262534607}
   - component: {fileID: 4773310523049127012}
+  - component: {fileID: -8234485080586473261}
   m_Layer: 7
   m_Name: Roamer Enemy
   m_TagString: GhostTag
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingHealth: 10
-  deathVFXPrefab: {fileID: 4879276280609179465, guid: 445e377134a265941a6349fc20541783, type: 3}
+  deathVFXPrefab: {fileID: 4879276280609179465, guid: 886d833b175294f00b7522514006ea5f, type: 3}
   knockBackThurst: 3
   hitCheck: 0
 --- !u!114 &8272203198390463557
@@ -268,9 +269,11 @@ MonoBehaviour:
   detectionRadius: 9
   moveSpeed: 6
   obstacleTag: Tree
-  trailRenderer: {fileID: 0}
+  dashSpeed: 20
+  trailRenderer: {fileID: 534470881452234525}
   detectAudio: {fileID: 4773310523049127012}
-  fallbackSpeed: 6
+  fallbackSpeed: 12
+  isDashing: 0
   attackCooldown: 0.6
 --- !u!82 &4773310523049127012
 AudioSource:
@@ -368,6 +371,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8234485080586473261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545247509947615703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85a7e9003b88b043b3076469f38a753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPickup: {fileID: 796133124467641175, guid: 4a325708413b3404ba986b3d0250275f, type: 3}
 --- !u!1 &8216737317680267168
 GameObject:
   m_ObjectHideFlags: 0

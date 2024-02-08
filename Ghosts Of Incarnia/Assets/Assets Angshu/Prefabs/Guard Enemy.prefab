@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 8111808755590490828}
   - component: {fileID: 4764953373994903035}
   - component: {fileID: 2082141608004470387}
+  - component: {fileID: -626154534383178820}
   m_Layer: 7
   m_Name: Guard Enemy
   m_TagString: GhostTag
@@ -262,12 +263,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRadius: 10
-  moveSpeed: 4
+  moveSpeed: 6
   obstacleTag: Tree
   dashSpeed: 7
-  trailRenderer: {fileID: 0}
+  trailRenderer: {fileID: 2179275705974168760}
   detectAudio: {fileID: 2082141608004470387}
-  fallbackSpeed: 5
+  fallbackSpeed: 14
   attackCooldown: 0.6
 --- !u!82 &2082141608004470387
 AudioSource:
@@ -365,6 +366,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-626154534383178820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6350615510715835191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85a7e9003b88b043b3076469f38a753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthPickup: {fileID: 796133124467641175, guid: 4a325708413b3404ba986b3d0250275f, type: 3}
 --- !u!1 &6384631105961310468
 GameObject:
   m_ObjectHideFlags: 0
