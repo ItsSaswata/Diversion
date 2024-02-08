@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slashAnimPrefab: {fileID: 8991297157778487528, guid: 3ec6bb4a85b1fab46a5961a823de0b5f, type: 3}
   slashAnimSpawnPoint: {fileID: 0}
-  AiswordDamageAmt: 2
+  AiswordDamageAmt: 4
   weaponInfo: {fileID: 11400000, guid: fdcc3710cecdcc7479c41a3e08d3427e, type: 2}
   AISoundFX: {fileID: 5943901639684954851}
 --- !u!114 &5521573030550722093
