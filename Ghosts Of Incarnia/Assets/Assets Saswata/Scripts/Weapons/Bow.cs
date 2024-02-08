@@ -7,8 +7,8 @@ public class Bow : MonoBehaviour, IWeapon
 {
     [SerializeField]private WeaponInfo weaponInfo;
     [SerializeField]GameObject arrowPrefab;
-    [SerializeField] GameObject active;
-    [SerializeField] GameObject reloading;
+    //[SerializeField] GameObject active;
+    //[SerializeField] GameObject reloading;
     [SerializeField]Transform arrowSpawn;
     [SerializeField]AudioSource BowFire;
     private int arrowcount;
@@ -34,14 +34,15 @@ public class Bow : MonoBehaviour, IWeapon
         {
             
             BowFire.Play();
+            Roamer.Instance.Dash();
             SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
             
             arrowcount++;
         }
         else
         {
-            active.SetActive(false);
-            reloading.SetActive(true);
+            //active.SetActive(false);
+            //reloading.SetActive(true);
             StartCoroutine(WeaponReload());
         }
 
@@ -73,7 +74,7 @@ public class Bow : MonoBehaviour, IWeapon
         GameObject newArrow = Instantiate(arrowPrefab, position, rotation);
         
         
-            Roamer.Instance.Dash();
+            
         
         
         newArrow.GetComponent<Projectile>().UpdateWeaponInfo(weaponInfo);
@@ -82,8 +83,8 @@ public class Bow : MonoBehaviour, IWeapon
     public IEnumerator WeaponReload()
     {
         yield return new WaitForSeconds(reloadTime);
-        active.SetActive(true);
-        reloading.SetActive(false);
+       // active.SetActive(true);
+        //reloading.SetActive(false);
         arrowcount = 0;
 
     }
