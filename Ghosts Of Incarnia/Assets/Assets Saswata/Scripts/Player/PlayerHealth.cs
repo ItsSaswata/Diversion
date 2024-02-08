@@ -33,7 +33,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     
     public void HealPlayer(){
         if(currentHealth<maxHealth){
-            currentHealth+=10;
+            currentHealth=50;
            UpdateHealthSlider();
         }
         
