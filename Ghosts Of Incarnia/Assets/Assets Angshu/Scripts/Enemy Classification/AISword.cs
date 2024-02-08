@@ -6,7 +6,7 @@ public class AISword : MonoBehaviour, IWeapon
 {
     [SerializeField] private GameObject slashAnimPrefab;
     public Transform slashAnimSpawnPoint;
-
+    [SerializeField]int AiswordDamageAmt;
     //[SerializeField] private float swordAttackCD = 0.5f;
     [SerializeField] private WeaponInfo weaponInfo;
     //private Transform weaponCollider;
@@ -86,7 +86,7 @@ public class AISword : MonoBehaviour, IWeapon
     void OnTriggerEnter2D(Collider2D other){
         PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
         if(!other.isTrigger&&playerHealth){
-            playerHealth.TakeDamage(1);
+            playerHealth.TakeDamage(AiswordDamageAmt);
             
         }
     }

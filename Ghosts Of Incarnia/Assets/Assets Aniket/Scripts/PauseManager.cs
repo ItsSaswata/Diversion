@@ -6,11 +6,13 @@ public class PauseManager : MonoBehaviour
     //public Camera playerCamera;
     public Camera mainCamera;
     public GameObject playerReff;
+    [SerializeField]private AudioSource playerAudioSource;
     private bool isPaused = false;
 
     void Start()
     {
         playerReff = AssetWarmup.Instance.PlayerPrefab;
+        playerAudioSource = playerReff.GetComponent<AudioSource>();
         ResumeGame();
     }
 
@@ -33,6 +35,7 @@ public class PauseManager : MonoBehaviour
         //playerCamera.enabled = false;
         mainCamera.enabled = true;
         playerReff.SetActive(false);
+        playerAudioSource.enabled = false;
     }
 
     void ResumeGame()
@@ -44,6 +47,7 @@ public class PauseManager : MonoBehaviour
         mainCamera.enabled = false;
 
         playerReff.SetActive(true);
+        playerAudioSource.enabled = true;
 
     }
 }

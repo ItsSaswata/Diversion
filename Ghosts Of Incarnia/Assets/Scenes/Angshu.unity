@@ -902,6 +902,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.000015258789
       objectReference: {fileID: 0}
+    - target: {fileID: 4444657668184593521, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5742108627189885113, guid: 35e8ceaed938a4945bbc606b1db50d49, type: 3}
       propertyPath: spawnPoint
       value: 
