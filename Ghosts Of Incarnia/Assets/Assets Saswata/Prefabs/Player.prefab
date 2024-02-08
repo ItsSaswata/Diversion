@@ -5342,6 +5342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2282502067533517845}
   spawnPoint: {fileID: 0}
+  radius: 5
 --- !u!1 &3264104016760414113
 GameObject:
   m_ObjectHideFlags: 0
@@ -8135,3 +8136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   spawnPoint: {fileID: 0}
+  radius: 5
