@@ -1,8 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject PauseMenuHolder;
+    public GameObject SettingsPanel;
     //public Camera playerCamera;
     public Camera mainCamera;
     public GameObject playerReff;
@@ -50,4 +55,16 @@ public class PauseManager : MonoBehaviour
         playerAudioSource.enabled = true;
 
     }
+    public void SettingsButton(){
+        SettingsPanel.SetActive(true);
+        PauseMenuHolder.SetActive(false);
+    }
+    public void BackButton(){
+        SettingsPanel.SetActive(false);
+        PauseMenuHolder.SetActive(true);
+    }
+    public void QuitButton(){
+        Application.Quit();
+    }
+    //gg
 }
