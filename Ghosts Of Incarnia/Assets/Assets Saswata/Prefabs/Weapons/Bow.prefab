@@ -52,6 +52,8 @@ MonoBehaviour:
   arrowPrefab: {fileID: 2954756706956113725, guid: f022c3f285dfb214198a64f5c6dd3bcb, type: 3}
   arrowSpawn: {fileID: 7820261376294291061}
   BowFire: {fileID: 8636536610802359096}
+  maxarrows: 0
+  reloadTime: 0
 --- !u!212 &3433703259240323332
 SpriteRenderer:
   m_ObjectHideFlags: 0

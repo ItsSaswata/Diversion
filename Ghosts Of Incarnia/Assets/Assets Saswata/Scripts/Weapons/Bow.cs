@@ -7,29 +7,20 @@ public class Bow : MonoBehaviour, IWeapon
 {
     [SerializeField]private WeaponInfo weaponInfo;
     [SerializeField]GameObject arrowPrefab;
+
     //[SerializeField] GameObject active;
     //[SerializeField] GameObject reloading;
+
     [SerializeField]Transform arrowSpawn;
     [SerializeField]AudioSource BowFire;
-    private int arrowcount;
-    public int maxarrows;
-    [SerializeField]private float reloadTime;
-    
     readonly int FIRE_HASH =   Animator.StringToHash("Fire");
     private Animator anim;
     private void Awake(){
-
         anim = GetComponent<Animator>();
-    }
-    private void Start()
-    {
-        maxarrows = 15;
-        arrowcount = 0;
-        reloadTime = 5f;
-        
     }
     public void Attack()
     {
+
         if (arrowcount <= maxarrows)
         {
             
@@ -46,7 +37,9 @@ public class Bow : MonoBehaviour, IWeapon
             StartCoroutine(WeaponReload());
         }
 
-        
+
+        BowFire.Play();
+        SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
         //BowFire.Stop();
         // Spawn arrow slightly to the left
         //Quaternion leftRotation = Quaternion.Euler(0, 0, -15f);
@@ -72,6 +65,7 @@ public class Bow : MonoBehaviour, IWeapon
     private void SpawnArrow(Vector3 position, Quaternion rotation)
     {
         GameObject newArrow = Instantiate(arrowPrefab, position, rotation);
+
         
         
             
@@ -88,6 +82,11 @@ public class Bow : MonoBehaviour, IWeapon
         arrowcount = 0;
 
     }
+
+
+        newArrow.GetComponent<Projectile>().UpdateWeaponInfo(weaponInfo);
+    }
+
 
     public WeaponInfo GetWeaponInfo(){
         return weaponInfo;
