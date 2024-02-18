@@ -285,6 +285,7 @@ RectTransform:
 
   m_Script: {fileID: 11500000, guid: 0400c449b4e0fa44a9b6443ee54ba4df, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   playerPrefab: {fileID: 0}
   pauseMenu: {fileID: 1975714913629354192}
 
