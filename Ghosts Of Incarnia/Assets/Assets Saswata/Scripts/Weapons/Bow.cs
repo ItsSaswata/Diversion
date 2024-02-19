@@ -21,25 +21,14 @@ public class Bow : MonoBehaviour, IWeapon
     public void Attack()
     {
 
-        if (arrowcount <= maxarrows)
-        {
-            
-            BowFire.Play();
-            Roamer.Instance.Dash();
+        
             SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
             
-            arrowcount++;
-        }
-        else
-        {
-            //active.SetActive(false);
-            //reloading.SetActive(true);
-            StartCoroutine(WeaponReload());
-        }
+        
 
 
         BowFire.Play();
-        SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
+        //SpawnArrow(arrowSpawn.position, arrowSpawn.rotation);
         //BowFire.Stop();
         // Spawn arrow slightly to the left
         //Quaternion leftRotation = Quaternion.Euler(0, 0, -15f);
@@ -74,18 +63,7 @@ public class Bow : MonoBehaviour, IWeapon
         newArrow.GetComponent<Projectile>().UpdateWeaponInfo(weaponInfo);
     }
 
-    public IEnumerator WeaponReload()
-    {
-        yield return new WaitForSeconds(reloadTime);
-       // active.SetActive(true);
-        //reloading.SetActive(false);
-        arrowcount = 0;
-
-    }
-
-
-        newArrow.GetComponent<Projectile>().UpdateWeaponInfo(weaponInfo);
-    }
+    
 
 
     public WeaponInfo GetWeaponInfo(){
